@@ -1,0 +1,51 @@
+[project]
+name = "streamcontroller-meet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4.0"]
+lint = ["ruff>=0.11.12", "dmypy-ls>=1.13", "mypy>=1.15.0", "pylint>=3.3.7"]
+
+[tool.uv]
+default-groups = "all"
+
+[tool.ruff]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # Ruff
+    "RUF",
+]
+ignore = [
+    "E501",   # ignore line-length (e.g. long docstring)
+    "SIM117", # ignore combine with statements (it leads to harder to read code)
+]
+line-length = 80
+indent-width = 2
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+mypy_path = "src"
+
+[tool.pylint.MASTER]
+ignore-paths = '^.direnv/.*$,^.venv/.*$,^.mypy_cache/.*$'
+
+[tool.pylint.basic]
+indent-string = "  "
