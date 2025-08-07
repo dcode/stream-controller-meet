@@ -1,0 +1,9 @@
+{
+  "name": "com.github.dcode.stream_controller_meet",
+  "description": "Native Messaging host for StreamController Google Meet Plugin",
+  "path": "/ABSOLUTE/PATH/TO/streamcontroller-meet/meet_proxy.go",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://kihkphjpcgohbgeflflddpcpfdhpejbo/"
+  ]
+}

@@ -15,7 +15,7 @@ lint = ["ruff>=0.11.12", "dmypy-ls>=1.13", "mypy>=1.15.0", "pylint>=3.3.7"]
 default-groups = "all"
 
 [tool.ruff]
-select = [
+lint.select = [
     # pycodestyle
     "E",
     # Pyflakes
@@ -31,7 +31,7 @@ select = [
     # Ruff
     "RUF",
 ]
-ignore = [
+lint.ignore = [
     "E501",   # ignore line-length (e.g. long docstring)
     "SIM117", # ignore combine with statements (it leads to harder to read code)
 ]
