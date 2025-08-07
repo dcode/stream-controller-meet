@@ -5,25 +5,38 @@
   "description": "Connects a stream-controller plugin to Google Meet for native hardware control.",
   "permissions": [
     "nativeMessaging",
-    "tabs"
+    "tabs",
+    "notifications"
   ],
   "host_permissions": [
     "https://meet.google.com/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
       "matches": [
         "https://meet.google.com/*"
       ],
-      "js": [
-        "content_script.js"
-      ],
+      "js": ["loader.js"],
       "run_at": "document_idle"
     }
   ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/zod.bundle.mjs",
+        "schemas.mjs",
+        "content_script.mjs"
+      ],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "Meet Controller Bridge"
+  },
   "icons": {
     "128": "icon.png"
   }

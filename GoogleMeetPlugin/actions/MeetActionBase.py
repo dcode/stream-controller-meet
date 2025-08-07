@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, Optional
 from src.backend.PluginManager.ActionBase import ActionBase
 
 if TYPE_CHECKING:
-  from ..main import GoogleMeetPlugin
+  from main import GoogleMeetPlugin
 
 
 class MeetActionBase(ActionBase):

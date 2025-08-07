@@ -3,4 +3,5 @@
 # relative to this script's location, making the setup more portable.
 
 DIR=$(dirname "$0")
-exec "$DIR/meet_proxy.go"
+# Assuming you have a python executable available in the PATH that Chrome can run.
+exec python "$DIR/meet_proxy.py"

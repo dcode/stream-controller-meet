@@ -1,6 +1,6 @@
 import os
 
-from .MeetActionBase import MeetActionBase
+from GoogleMeetPlugin.actions.MeetActionBase import MeetActionBase
 
 
 class HangUpAction(MeetActionBase):

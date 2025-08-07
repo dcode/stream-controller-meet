@@ -1,4 +1,4 @@
-from .MeetActionBase import MeetActionBase
+from GoogleMeetPlugin.actions.MeetActionBase import MeetActionBase
 
 
 class RaiseHandAction(MeetActionBase):
