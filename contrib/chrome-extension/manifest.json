@@ -38,6 +38,6 @@
     "default_title": "Meet Controller Bridge"
   },
   "icons": {
-    "128": "icon.png"
+    "128": "assets/icon_128.png"
   }
 }

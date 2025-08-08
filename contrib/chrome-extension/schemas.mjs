@@ -33,10 +33,15 @@ export const ActionType = z.enum([
 
 export const ActionCommandSchema = z.object({
   action: ActionType,
-});
+}).strict();
 
 export const StatusUpdateSchema = z.object({
   status: z.literal("update"),
   control: z.enum(["microphone", "camera", "hand", "reactions", "call", "presenting", "chat_panel", "participants_panel"]),
   state: z.enum(["on", "off"]),
-});
+}).strict();
+
+export const ErrorSchema = z.object({
+  status: z.literal("error"),
+  message: z.string(),
+}).strict();

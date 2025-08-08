@@ -1,0 +1,43 @@
+{
+  "name": "streamcontroller-googlemeetplugin",
+  "version": "0.1.0",
+  "main": "loader.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [
+    "stream-controller",
+    "google-meet",
+    "plugin"
+  ],
+  "author": "Derek Ditch <dcode@users.noreply.github.com>",
+  "license": "MIT",
+  "description": "Connects a stream-controller plugin to Google Meet for native hardware control.",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-jest": "^30.0.5",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.m?js$": "babel-jest"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "mjs"
+    ]
+  }
+}
