@@ -5,6 +5,7 @@ class TogglePresentAction(MeetActionBase):
   """Action to toggle screen sharing in Google Meet."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new TogglePresentAction."""
     super().__init__(*args, **kwargs)
     self.action_name = "toggle_present"
     self.icon_on = "present_on.png"

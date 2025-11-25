@@ -10,6 +10,7 @@ class ReactionActionBase(MeetActionBase):
   """
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new ReactionActionBase."""
     super().__init__(*args, **kwargs)
     self.icon_name: str = ""  # To be overridden by subclasses
 
