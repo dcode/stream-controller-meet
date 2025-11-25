@@ -13,6 +13,7 @@ class MeetActionBase(ActionBase):
   """A base class for Google Meet actions providing common functionality."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new MeetActionBase."""
     super().__init__(*args, **kwargs)
     self.plugin_base: GoogleMeetPlugin
     self.is_on: Optional[bool] = None  # None means unknown state

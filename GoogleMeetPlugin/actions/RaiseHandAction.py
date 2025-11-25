@@ -5,6 +5,7 @@ class RaiseHandAction(MeetActionBase):
   """Action to raise or lower hand in Google Meet."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new RaiseHandAction."""
     super().__init__(*args, **kwargs)
     self.action_name = "raise_hand"
     self.icon_on = "hand_raised.png"  # Icon when hand is up
