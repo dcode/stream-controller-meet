@@ -1,6 +1,7 @@
-"""
-Pydantic models for validating the IPC messages between the plugin and the
-Chrome extension proxy.
+"""Pydantic models for validating the IPC messages.
+
+This module defines the Pydantic models used to validate the structure and
+content of messages exchanged between the plugin and the Chrome extension proxy.
 """
 
 from typing import Literal

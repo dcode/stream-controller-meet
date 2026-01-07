@@ -11,7 +11,12 @@ logger = logging.getLogger(__name__)
 
 
 class SocketIPCServer:
-  """A simple socket server to communicate with a single client (the proxy)."""
+  """A simple socket server to communicate with a single client (the proxy).
+
+  This class sets up a UNIX domain socket and listens for a single client
+  connection. It is responsible for sending and receiving messages to/from the
+  Chrome extension proxy.
+  """
 
   def __init__(
     self,
