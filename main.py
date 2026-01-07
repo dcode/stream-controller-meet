@@ -34,15 +34,15 @@ logger = logging.getLogger(__name__)
 
 
 class GoogleMeetPlugin(PluginBase):
-  """
-   A StreamController plugin to control Google Meet via a Chrome extension.
+  """A StreamController plugin to control Google Meet via a Chrome extension.
 
-   This plugin uses native messaging to communicate with a companion Chrome
-   extension, allowing for control of Meet functions and receiving status
+  This plugin uses native messaging to communicate with a companion Chrome
+  extension, allowing for control of Meet functions and receiving status
   updates to display on the Stream Deck.
   """
 
   def __init__(self) -> None:
+    """Initializes the GoogleMeetPlugin."""
     super().__init__()
 
     # Define the socket path according to XDG specs for Flatpak compatibility

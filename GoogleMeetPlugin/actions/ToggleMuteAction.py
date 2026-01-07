@@ -5,6 +5,7 @@ class ToggleMuteAction(MeetActionBase):
   """Action to toggle the microphone in Google Meet."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new ToggleMuteAction."""
     super().__init__(*args, **kwargs)
     self.action_name = "toggle_mute"
     self.icon_on = "mic_on.png"  # Icon when mic is unmuted
