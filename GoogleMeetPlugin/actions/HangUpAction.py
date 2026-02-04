@@ -7,6 +7,7 @@ class HangUpAction(MeetActionBase):
   """Action to hang up/leave the Google Meet call."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new HangUpAction."""
     super().__init__(*args, **kwargs)
     self.action_name = "hang_up"
 

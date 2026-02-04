@@ -5,6 +5,7 @@ class ToggleChatPanelAction(MeetActionBase):
   """Action to toggle the chat panel in Google Meet."""
 
   def __init__(self, *args, **kwargs):
+    """Initializes a new ToggleChatPanelAction."""
     super().__init__(*args, **kwargs)
     self.action_name = "toggle_chat_panel"
     self.icon_on = "chat_on.png"
